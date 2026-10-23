@@ -18,7 +18,7 @@ client.on('messageCreate', message => {
 
     if (message.content.includes('discord.gg/') || message.content.includes('https://')) {
         message.delete().catch(console.error);
-        message.channel.send(`${message.author}, ممنوع نشر الرابط هنا!`).then(msg => {
+        message.channel.send(`${message.author}!`).then(msg => {
             setTimeout(() => msg.delete().catch(console.error), 5000);
         });
     }
