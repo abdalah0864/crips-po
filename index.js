@@ -25,5 +25,3 @@ client.on('messageCreate', message => {
 });
 
 client.login(MTM0Mjg3MzYwNzczMDIzNzQ1MQ.GYarx3.41K6fJwmcCPmBNlDRaGruUMG7uOqbFYSmzh3Wo);
-const http = require('http');
-http.createServer((req, res) => res.end('Bot is running!')).listen(process.env.PORT || 3000);
